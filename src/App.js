@@ -12,6 +12,7 @@ import CourseDetels from './commponents/CourseDetels/CourseDetels';
 import Blog from './commponents/Blog/Blog';
 import FAQ from './commponents/FAQ/FAQ';
 import Premium from './commponents/Premium/Premium';
+import NotFund404 from './commponents/NotFund404/NotFund404';
 
 function App() {
   const router = createBrowserRouter([
@@ -57,7 +58,7 @@ function App() {
         },
         {
           path: '*',
-          element: <h2 className='h-25 my-auto text-danger d-flex justify-content-center  align-items-center'>404 Not Funded</h2>
+          element: <NotFund404></NotFund404>
         }
       ]
     }
