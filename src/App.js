@@ -40,7 +40,7 @@ function App() {
         {
           path: '/course/:id/checkout',
           element: <PrivetRoute><Premium></Premium></PrivetRoute>,
-          loader: ({ params }) => fetch(`http://localhost:5000/course/${params.id}/checkout`)
+          loader: ({ params }) => fetch(`https://online-school-server-zeta.vercel.app/course/${params.id}/checkout`)
         },
         {
           path: '/register',
@@ -49,12 +49,12 @@ function App() {
         {
           path: '/courses',
           element: <Courses></Courses>,
-          loader: () => fetch('http://localhost:5000/courses')
+          loader: () => fetch('https://online-school-server-zeta.vercel.app/courses')
         },
         {
           path: '/course/:id',
           element: <CourseDetels></CourseDetels>,
-          loader: ({ params }) => fetch(`http://localhost:5000/course/${params.id}`)
+          loader: ({ params }) => fetch(`https://online-school-server-zeta.vercel.app/course/${params.id}`)
         },
         {
           path: '*',
