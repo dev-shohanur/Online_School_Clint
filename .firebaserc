@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "Online School"
-  }
+    "default": "online-school-b874a",
+    "oneline-school": "online-school-b874a"
+  },
+  "targets": {},
+  "etags": {}
 }

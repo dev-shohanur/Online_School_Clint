@@ -2,8 +2,6 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
 import Footer from '../../shared/Footer/Footer';
-import LeftSideNav from '../../shared/LeftSideNav/LeftSideNav';
-import RightSideNav from '../../shared/RightSideNav/RightSideNav';
 import Header from '../Header/Header';
 
 const Min = () => {

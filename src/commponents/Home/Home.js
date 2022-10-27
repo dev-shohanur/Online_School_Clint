@@ -5,59 +5,20 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <Carousel>
-            <Carousel.Item>
-                <div className="bg-black">
-
-                    <img
-                        className="d-block w-100 opacity-50"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg1yUDQ8MMjdqzMj4SAfiN_EQpVGkWHnUpTwv86MbMUCkhxOjK66YA0lk-v-o7pJ-dbO0&usqp=CAU"
-                        alt="First slide"
-                    />
+        <div className="container my-4">
+            <div className="row">
+                <div className="col-sm-6">
+                    <img className='w-100 shadow' src="https://tech-guru-a37d0.web.app/static/media/sidepic.67b6ffad9df9221179ea.png" alt="" />
                 </div>
-                <Carousel.Caption>
-                    <h2 className='fw-bold'>Online School</h2>
-                    <p>Equally ready online school for quality courses and best Support.</p>
-                    <Link to='/courses'>
-                        <button className='btn  btn-outline-light fw-bold'>All Courses</button>
-                    </Link>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <div className="bg-black">
-
-                    <img
-                        className="d-block w-100 opacity-50"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg1yUDQ8MMjdqzMj4SAfiN_EQpVGkWHnUpTwv86MbMUCkhxOjK66YA0lk-v-o7pJ-dbO0&usqp=CAU"
-                        alt="First slide"
-                    />
+                <div className="col-sm-6 d-flex align-items-center">
+                    <div className="">
+                        <h2 className='fs-1'>Looking For The Best Online Courses In The Country?</h2>
+                        <h3 className='text-warning my-3'>The Search Is Over. Here We Are.</h3>
+                        <Link to='/courses'><button className='btn btn-danger'>Our Courses</button></Link>
+                    </div>
                 </div>
-                <Carousel.Caption>
-                    <h2 className='fw-bold'>Online School</h2>
-                    <p>Equally ready online school for quality courses and best Support.</p>
-                    <Link to='/courses'>
-                        <button className='btn  btn-outline-light fw-bold'>All Courses</button>
-                    </Link>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <div className="bg-black">
-
-                    <img
-                        className="d-block w-100 opacity-50"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg1yUDQ8MMjdqzMj4SAfiN_EQpVGkWHnUpTwv86MbMUCkhxOjK66YA0lk-v-o7pJ-dbO0&usqp=CAU"
-                        alt="First slide"
-                    />
-                </div>
-                <Carousel.Caption>
-                    <h2 className='fw-bold'>Online School</h2>
-                    <p>Equally ready online school for quality courses and best Support.</p>
-                    <Link to='/courses'>
-                        <button className='btn  btn-outline-light fw-bold'>All Courses</button>
-                    </Link>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
+            </div>
+        </div>
 
     );
 };

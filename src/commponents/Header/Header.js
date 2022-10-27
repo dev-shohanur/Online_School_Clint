@@ -3,11 +3,9 @@ import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FaBlog, FaBookOpen, FaHome, FaQuestion, FaSignOutAlt, FaUserAlt } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
-import LeftSideNav from '../../shared/LeftSideNav/LeftSideNav';
 import { Form } from 'react-bootstrap';
 import DarkModeToggle from "react-dark-mode-toggle";
 
@@ -22,7 +20,7 @@ const Header = () => {
     const [isDarkMode, setIsDarkMode] = useState(() => false);
 
     return (
-        <Navbar collapseOnSelect className=' d-flex justify-content-between sticky-top' expand="lg" bg="light" variant="">
+        <Navbar collapseOnSelect className=' d-flex justify-content-between sticky-top shadow' expand="lg" bg="light" variant="">
             <Container>
                 <Navbar.Brand><Link to='/' className='text-decoration-none'><FaBookOpen/> Online School</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -75,9 +73,6 @@ const Header = () => {
                             />
                         </Nav.Link>
                     </Nav>
-                    <div className='d-lg-none'>
-                        <LeftSideNav></LeftSideNav>
-                    </div>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
