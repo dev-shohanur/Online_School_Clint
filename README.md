@@ -4,6 +4,9 @@ Live Website Link :<br/>
 
   => Here are the blogs and the blogs contain answers to some of the questions you may need.<br/>
   => Here are the faqs and answers to some of the questions that may come to your mind.<br/>
+  => Here you can change the theme of the website to dark and light according to your convenience.<br/>
+  => From here you can download the course details in PDF format<br/>
+  => This website is built as a one page application using React Router DOM, which makes our website very fast and gives you peace of mind.<br/>
 
 Here are three ways to login<br/>
    => Email and Password<br/>
