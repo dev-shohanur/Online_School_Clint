@@ -54,6 +54,10 @@ function App() {
           path: '/course/:id',
           element: <CourseDetels></CourseDetels>,
           loader: ({ params }) => fetch(`http://localhost:5000/course/${params.id}`)
+        },
+        {
+          path: '*',
+          element: <h2 className='h-25 my-auto text-danger d-flex justify-content-center  align-items-center'>404 Not Funded</h2>
         }
       ]
     }

@@ -9,23 +9,23 @@ import { FaCheck } from 'react-icons/fa';
 const Courses = () => {
     const courses = useLoaderData();
     return (
-        <div>
+        <div className='w-100 overflow-hidden'>
             <Row>
                 <Col sm={3} className='bg-dark p-4'>
                     {
                         courses.map(course =>
                             <Link to={`/course/${course.id}`} className='text-decoration-none bg-white'>
-                                <h5 className='text-white'>
-                                    <span className='text-success'><FaCheck /> </span>
+                                <button className='text-white btn btn-primary mb-3'>
+                                    <span className='text-white'><FaCheck /> </span>
                                     {course.name }.
-                                </h5>
+                                </button>
                             </Link>
                         )
                     }
                 </Col>
                 <Col sm={9}>
                     <Container>
-                        <h2 className='text-center pb-5'>Our Courses</h2>
+                        <h2 className='text-center pt-5 pb-3 fw-bold'>Our Courses</h2>
                         <div className='row row-cols-1 row-cols-md-2 g-4'>
 
                             {

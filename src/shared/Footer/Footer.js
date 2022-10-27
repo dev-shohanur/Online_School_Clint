@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <>
-            <div className='bg-warning py-4 mt-5 row p-5 bg-opacity-75'>
+            <div className='bg-warning py-4 mt-5 mx-0 row p-5 bg-opacity-75 w-100'>
                 <div className="col-sm-6">
                     <Link to='/' className='fs-3 text-decoration-none  text-black'><FaBookOpen/> Online School</Link>
                     <p><FaLocationArrow /> Level-22, 44, Awal Centre, Banani, Dhaka</p>

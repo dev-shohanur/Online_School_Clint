@@ -22,7 +22,7 @@ const Header = () => {
     const [isDarkMode, setIsDarkMode] = useState(() => false);
 
     return (
-        <Navbar collapseOnSelect className='bg-opacity-75 d-flex justify-content-between' expand="lg" bg="light" variant="">
+        <Navbar collapseOnSelect className=' d-flex justify-content-between sticky-top' expand="lg" bg="light" variant="">
             <Container>
                 <Navbar.Brand><Link to='/' className='text-decoration-none'><FaBookOpen/> Online School</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
