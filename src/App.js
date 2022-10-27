@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Min from './commponents/Min/Min';
 import Home from './commponents/Home/Home';
 import Category from './commponents/Caregory/Category';
-import News from './commponents/News/News';
 import LogIn from './commponents/LogIn/LogIn';
 import Register from './commponents/Register/Register';
 import PrivetRoute from './route/PrivetRoute/PrivetRoute';
