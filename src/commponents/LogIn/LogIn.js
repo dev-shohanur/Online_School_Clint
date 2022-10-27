@@ -15,22 +15,7 @@ const LogIn = () => {
     const { signIn, providerLogIn, githubProviderLogIn } = useContext(AuthContext);
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
-    const handelGoogleSignIn = () => {
-        providerLogIn(googleProvider)
-            .then(result => {
-                const user = result.user;
-                console.log(user);
-            })
-            .catch(error => console.error(error))
-    }
-    const handelGithubSignIn = () => {
-        providerLogIn(githubProvider)
-            .then(result => {
-                const user = result.user;
-                console.log(user);
-            })
-            .catch(error => console.error(error))
-    }
+
     const handleSignIn = event => {
         event.preventDefault();
         const form = event.target;
@@ -48,6 +33,24 @@ const LogIn = () => {
                 console.error('error', error)
                 setError(error.message);
             })
+    }
+    const handelGoogleSignIn = () => {
+        providerLogIn(googleProvider)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                navigate(from, { replace: true });
+            })
+            .catch(error => console.error(error))
+    }
+    const handelGithubSignIn = () => {
+        providerLogIn(githubProvider)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                navigate(from, { replace: true });
+            })
+            .catch(error => console.error(error))
     }
     return (
         <>

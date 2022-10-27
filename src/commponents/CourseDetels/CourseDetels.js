@@ -17,7 +17,7 @@ const CourseDetels = () => {
         <Container ref={ref}>
             <Row className='my-5'>
                 <Col sm={7}>
-                    <div className="bg-opacity-10 bg-primary p-3 rounded">
+                    <div className=" shadow bg-light p-3 rounded">
                         <img className='w-100' src={courseThumbel} alt="" srcset="" />
                         <h4 className='my-3'>{name}</h4>
                         <hr />
@@ -27,9 +27,12 @@ const CourseDetels = () => {
                         </div>
                         <div className="d-flex justify-content-between">
                             <Pdf targetRef={ref} filename='course-details.pdf'>
-                                {({ toPdf }) => <Button onClick={toPdf}>Download pdf</Button> }
+                                {({ toPdf }) =>
+                                    <Button className='btn-warning' onClick={toPdf}>Download pdf</Button>}
                             </Pdf>
-                            <Link to={`/course/${id}/checkout`}><Button>Get premium access</Button></Link>
+                            <Link to={`/course/${id}/checkout`}>
+                                <Button className='btn-warning'>Get premium access</Button>
+                            </Link>
                             
                         </div>
                     </div>

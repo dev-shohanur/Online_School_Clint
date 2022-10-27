@@ -11,7 +11,7 @@ const Courses = () => {
     return (
         <div className='w-100 overflow-hidden'>
             <Row>
-                <Col sm={3} className='bg-danger bg-opacity-50 p-4'>
+                <Col sm={3} className=' shadow-lg rounded-3 bg-opacity-50 p-4' style={{ backgroundColor: '#F5F5F5'}}>
                     {
                         courses.map(course =>
                             <Link to={`/course/${course.id}`} className='text-decoration-none bg-white'>
