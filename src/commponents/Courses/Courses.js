@@ -11,13 +11,13 @@ const Courses = () => {
     return (
         <div>
             <Row>
-                <Col sm={3} className='bg-warning p-4 bg-opacity-75'>
+                <Col sm={3} className='bg-dark p-4'>
                     {
                         courses.map(course =>
                             <Link to={`/course/${course.id}`} className='text-decoration-none bg-white'>
-                                <h5 className='text-black'>
+                                <h5 className='text-white'>
                                     <span className='text-success'><FaCheck /> </span>
-                                    {course.name}
+                                    {course.name }.
                                 </h5>
                             </Link>
                         )
