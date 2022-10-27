@@ -1,37 +1,64 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
-import NewsSumaryCard from '../../shared/NewsSumaryCard/NewsSumaryCard';
+import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
     return (
-        <div>
-            <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
-                <div className="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <Carousel>
+            <Carousel.Item>
+                <div className="bg-black">
+
+                    <img
+                        className="d-block w-100 opacity-50"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg1yUDQ8MMjdqzMj4SAfiN_EQpVGkWHnUpTwv86MbMUCkhxOjK66YA0lk-v-o7pJ-dbO0&usqp=CAU"
+                        alt="First slide"
+                    />
                 </div>
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrI7v7hT0NP3oriQ1pb9GQJ8fJUuJf5f-r_w&usqp=CAU" className="d-block w-100" alt="..."/>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf-JO2BFsQX1jz6IR4WcNvzkGb29ap4EVYDQ&usqp=CAU" className="d-block w-100" alt="..."/>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUhS5LIbImPcUAK2U6eejVZqwWHWYCjgDHlA&usqp=CAU" className="d-block w-100" alt="..."/>
-                    </div>
+                <Carousel.Caption>
+                    <h2 className='fw-bold'>Online School</h2>
+                    <p>Equally ready online school for quality courses and best Support.</p>
+                    <Link to='/courses'>
+                        <button className='btn  btn-outline-light fw-bold'>All Courses</button>
+                    </Link>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <div className="bg-black">
+
+                    <img
+                        className="d-block w-100 opacity-50"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg1yUDQ8MMjdqzMj4SAfiN_EQpVGkWHnUpTwv86MbMUCkhxOjK66YA0lk-v-o7pJ-dbO0&usqp=CAU"
+                        alt="First slide"
+                    />
                 </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
+                <Carousel.Caption>
+                    <h2 className='fw-bold'>Online School</h2>
+                    <p>Equally ready online school for quality courses and best Support.</p>
+                    <Link to='/courses'>
+                        <button className='btn  btn-outline-light fw-bold'>All Courses</button>
+                    </Link>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <div className="bg-black">
+
+                    <img
+                        className="d-block w-100 opacity-50"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg1yUDQ8MMjdqzMj4SAfiN_EQpVGkWHnUpTwv86MbMUCkhxOjK66YA0lk-v-o7pJ-dbO0&usqp=CAU"
+                        alt="First slide"
+                    />
+                </div>
+                <Carousel.Caption>
+                    <h2 className='fw-bold'>Online School</h2>
+                    <p>Equally ready online school for quality courses and best Support.</p>
+                    <Link to='/courses'>
+                        <button className='btn  btn-outline-light fw-bold'>All Courses</button>
+                    </Link>
+                </Carousel.Caption>
+            </Carousel.Item>
+        </Carousel>
+
     );
 };
 

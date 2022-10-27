@@ -11,11 +11,11 @@ const Courses = () => {
     return (
         <div className='w-100 overflow-hidden'>
             <Row>
-                <Col sm={3} className='bg-dark p-4'>
+                <Col sm={3} className='bg-danger bg-opacity-50 p-4'>
                     {
                         courses.map(course =>
                             <Link to={`/course/${course.id}`} className='text-decoration-none bg-white'>
-                                <button className='text-white btn btn-primary mb-3'>
+                                <button className='text-white btn btn-warning fw-bold mb-3 w-100'>
                                     <span className='text-white'><FaCheck /> </span>
                                     {course.name }.
                                 </button>
